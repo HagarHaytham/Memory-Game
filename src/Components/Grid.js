@@ -4,7 +4,8 @@ const Grid = ({cards,handleChoice}) => {
     <div className="grid-container">
 
     {cards.map((card)=> 
-      <Card key ={card.id} card ={card} handleChoice={handleChoice}/>)}
+      <Card key ={card.id} card ={card} handleChoice={handleChoice}/>)
+    }
 
     </div>
   )

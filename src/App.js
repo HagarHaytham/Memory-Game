@@ -14,9 +14,13 @@ function App() {
       if(firstCard && secondCard){
         if(firstCard.number !==secondCard.number){
           console.log(' Not a match')
-          setCards(cards.map((card)=> card.id === firstCard.id || card.id === secondCard.id ?{...card,flipped:false}:card))       
+          
+         
+          setTimeout(()=>setCards(cards.map((card)=> card.id === firstCard.id || card.id === secondCard.id ?{...card,flipped:false}:card)) ,1000) 
         }
-        resetCards()    
+        resetCards()
+        
+           
       } 
     }
     checkMatch()
@@ -43,6 +47,8 @@ function App() {
     const randomizedCards = cards.sort(()=> Math.random()-0.5)
     console.log(randomizedCards)
     setCards(randomizedCards)
+    setFirstCard(null)
+    setSecondCard(null)
     
   }
 
