@@ -26,3 +26,8 @@ code {
   text-align: center;
   line-height: 100px;
 }
+
+.box-back {
+  background-color: blueviolet;
+  line-height: 100px;
+}
