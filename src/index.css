@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 100px);
+  gap: 10px;
+}
+
+.box {
+  background-color: lightblue;
+  font-size: 36px;
+  text-align: center;
+  line-height: 100px;
+}
